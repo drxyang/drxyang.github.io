@@ -1,9 +1,268 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>PhD</title>
+  <title>PhD-Journal</title>
   <link href="http://drxyang.github.ioindex.xml" rel="self" />
   <link href="http://drxyang.github.io"/>
   <updated>Lisp error in nil: (wrong-type-argument integerp nil)</updated>
   <id>http://drxyang.github.ioindex.xml</id>
-  
+  <entry><title type="html">开发环境搭建</title><author><name>etimecowboy</name></author><link href="http://drxyang.github.io/blog/2013/10/05_.html"/><updated>2013-10-05T22:05:00Z</updated><published>2013-10-05T22:05:00Z</published><id>blog/2013/10/05_.html</id><category scheme="/tags/xpc.html" term="xpc" label="xpc"/><category scheme="/tags/setup.html" term="setup" label="setup"/><category scheme="/tags/install.html" term="install" label="install"/><content type="html">&lt;p&gt;
+Cochlear 公司提供的模块只能在 MATLAB 2012a 及以下的版本运行。这带来不少的麻烦。
+需要完成配置
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;软件环境：
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Windows 7 64-bit
+&lt;/li&gt;
+&lt;li&gt;MATLAB 2012a 64-bit &lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;/li&gt;
+&lt;li&gt;Windows SDK 7.1, or Visual Studio 10.0 Professional with SP1
+&lt;/li&gt;
+&lt;li&gt;Speedgoat driver 7
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;硬件环境：
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Desktop PC
+&lt;/li&gt;
+&lt;li&gt;Speedgoat target machine
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;1615 (new)
+&lt;/li&gt;
+&lt;li&gt;1273 (old)
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;出现的问题&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;安装 Windows SDK 7.1 失败&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-1"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Installation of the "Microsoft Windows SDKfor Windows 7" product has
+reported the following error: Please refer to
+Samples\Setup\HTML\ConfigDetails.htm document for further information.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-1-1-1" class="outline-4"&gt;
+&lt;h4 id="sec-1-1-1"&gt;参考&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-1-1"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://support.microsoft.com/kb/2717426"&gt;Microsoft Support&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-1-2" class="outline-4"&gt;
+&lt;h4 id="sec-1-1-2"&gt;解决办法&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-1-2"&gt;
+&lt;p&gt;
+To resolve this issue, you must uninstall all versions of the Visual
+C++ 2010 Redistributable before installing the Windows 7 SDK. You may
+have one or more of the following products installed:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Microsoft Visual C++ 2010 x86 Redistributable
+&lt;/li&gt;
+&lt;li&gt;Microsoft Visual C++ 2010 x64 Redistributable
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+After uninstalling the Microsoft Visual C++ 2010 Redistributable
+products, you may install the Windows 7 SDK. After installing the
+Windows 7 SDK, you may then reinstall the newer version of the Visual
+C++ 2010 Redistributable products, in order to restore the Visual C++
+2010 Redistributable products to their original state.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;安装 speedgoat driver&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-2"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-2-1" class="outline-4"&gt;
+&lt;h4 id="sec-1-2-1"&gt;Set MATLAB &amp;amp; xPC&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-2-1"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Run MATLAB as administrator
+&lt;/li&gt;
+&lt;li&gt;Set mex compiler by &lt;code&gt;mex -setup&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;Set xpc compiler by &lt;code&gt;xpcsetCC -setup&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;Set target kernel by &lt;code&gt;rtwintgt -setup&lt;/code&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2-2" class="outline-4"&gt;
+&lt;h4 id="sec-1-2-2"&gt;Install speedgoat driver&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-2-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Go to the driver folder
+&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;speedgoat_setup&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;Restart MATLAB
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2-3" class="outline-4"&gt;
+&lt;h4 id="sec-1-2-3"&gt;Set target machine&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-2-3"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-2-3-1" class="outline-5"&gt;
+&lt;h5 id="sec-1-2-3-1"&gt;Run &lt;code&gt;xpcexplr&lt;/code&gt; on 32-bit MATLAB to set target machine&lt;/h5&gt;
+&lt;div class="outline-text-5" id="text-1-2-3-1"&gt;
+&lt;p&gt;
+Note: you will get error on 64-bit MATLAB
+&lt;/p&gt;
+
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col  class="left" /&gt;
+
+&lt;col  class="right" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;IP address&lt;/td&gt;
+&lt;td class="right"&gt;192.168.7.1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;TCP/IP target port&lt;/td&gt;
+&lt;td class="right"&gt;22222&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;LAN subnet  mask    address:&lt;/td&gt;
+&lt;td class="right"&gt;255.255.255.0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;TCP/IP gateway address&lt;/td&gt;
+&lt;td class="right"&gt;255.255.255.255&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;TCP/IP target driver&lt;/td&gt;
+&lt;td class="right"&gt;I8254x&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;Multicore CPU support&lt;/td&gt;
+&lt;td class="right"&gt;enable&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;Graphic mode&lt;/td&gt;
+&lt;td class="right"&gt;enable&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2-3-2" class="outline-5"&gt;
+&lt;h5 id="sec-1-2-3-2"&gt;Run the commander tools on 64-bit MATLAB to set target machine&lt;/h5&gt;
+&lt;div class="outline-text-5" id="text-1-2-3-2"&gt;
+&lt;p&gt;
+参考： MATLAB hep system "xPC Target"&amp;#x2014;"User's Guide"&amp;#x2014;"Configuring
+Environment From the MATLAB Command Line"
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-matlab"&gt;&lt;span class="linenr"&gt;1: &lt;/span&gt;tgs=xpctarget.targets;
+&lt;span class="linenr"&gt;2: &lt;/span&gt;tgs.makeDefault(&lt;span style="color: #cc9393;"&gt;'TargetPC1'&lt;/span&gt;);
+&lt;span class="linenr"&gt;3: &lt;/span&gt;env=tgs.Item(&lt;span style="color: #cc9393;"&gt;'TargetPC1'&lt;/span&gt;);
+&lt;span class="linenr"&gt;4: &lt;/span&gt;env.HostTargetComm=&lt;span style="color: #cc9393;"&gt;'TcpIp'&lt;/span&gt;;
+&lt;span class="linenr"&gt;5: &lt;/span&gt;env.TcpIpTargetAddress=&lt;span style="color: #cc9393;"&gt;'192.168.7.1'&lt;/span&gt;;
+&lt;span class="linenr"&gt;6: &lt;/span&gt;env.TcpIpTargetPort=&lt;span style="color: #cc9393;"&gt;'22222'&lt;/span&gt;;
+&lt;span class="linenr"&gt;7: &lt;/span&gt;env.TcpIpSubNetMask=&lt;span style="color: #cc9393;"&gt;'255.255.255.0'&lt;/span&gt;;
+&lt;span class="linenr"&gt;8: &lt;/span&gt;env.TcpIpGateway=&lt;span style="color: #cc9393;"&gt;'255.255.255.255'&lt;/span&gt;;
+&lt;span class="linenr"&gt;9: &lt;/span&gt;env.TcpIpTargetDriver=&lt;span style="color: #cc9393;"&gt;'I8254x'&lt;/span&gt;;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2-4" class="outline-4"&gt;
+&lt;h4 id="sec-1-2-4"&gt;Make a boot disk on the host PC&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-2-4"&gt;
+&lt;p&gt;
+Run &lt;code&gt;speedgoatmachineboot&lt;/code&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2-5" class="outline-4"&gt;
+&lt;h4 id="sec-1-2-5"&gt;Transfer the kernel and make a boot disk&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-2-5"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Insert the boot disk to an USB port of the target machine
+&lt;/li&gt;
+&lt;li&gt;Restart the target machine to load the new kernel
+&lt;/li&gt;
+&lt;li&gt;Check the display information of the target machine
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2-6" class="outline-4"&gt;
+&lt;h4 id="sec-1-2-6"&gt;Set the host PC&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-2-6"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Connect the host and the target via a Ethernet cable. Make sure
+that the cable inserts to the correct "Host Link" port.
+&lt;/li&gt;
+&lt;li&gt;Set IP address (TCP/IPV4) of the host
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;IP address: 192.168.7.2
+&lt;/li&gt;
+&lt;li&gt;Subnet mask: 255.255.255.0
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2-7" class="outline-4"&gt;
+&lt;h4 id="sec-1-2-7"&gt;Test host-target communication&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-2-7"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;&lt;code&gt;xpctargetping&lt;/code&gt; success
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xpctest&lt;/code&gt; success
+&lt;/li&gt;
+&lt;li&gt;Speedgoat full system test (run demos)
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="footnotes"&gt;
+&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
+&lt;div id="text-footnotes"&gt;
+
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;这里必须说一下，如果 64-bit 的 Windows7
+     安装了 32-bit 的 MATLAB，将无法 使用 xPC 连接 target machine。&lt;/p&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;</content></entry>
 </feed>
