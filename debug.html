@@ -160,7 +160,7 @@
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>0</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"开发环境搭建"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 32508)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 33468)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2013</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>day</code></td><td class="value"><pre>5</pre></td></tr>
@@ -332,24 +332,24 @@ Windows 7 SDK, you may then reinstall the newer version of the Visual
 C++ 2010 Redistributable products, in order to restore the Visual C++
 2010 Redistributable products to their original state.
 
-*** 安装 speedgoat driver
 
-**** Set MATLAB &amp; xPC
+*** 配置 MATLAB &amp; xPC
    
 1. Run MATLAB as administrator
 2. Set mex compiler by =mex -setup=
 3. Set xpc compiler by =xpcsetCC -setup=
 4. Set target kernel by =rtwintgt -setup=
 
-**** Install speedgoat driver
+*** 安装 speedgoat driver
 
+1. Download the latest driver
 1. Go to the driver folder
 2. Run =speedgoat_setup=
 3. Restart MATLAB
 
-**** Set target machine
-    
-***** Run =xpcexplr= on 32-bit MATLAB to set target machine
+*** 配置 target machine
+   
+**** Run =xpcexplr= on 32-bit MATLAB to set target machine
 
 Note: you will get error on 64-bit MATLAB
 
@@ -361,7 +361,7 @@ Note: you will get error on 64-bit MATLAB
 | Multicore CPU support        |          enable |
 | Graphic mode                 |          enable |
 
-***** Run the commander tools on 64-bit MATLAB to set target machine
+**** Run the commander tools on 64-bit MATLAB to set target machine
 
 参考： MATLAB hep system \"xPC Target\"---\"User's Guide\"---\"Configuring
 Environment From the MATLAB Command Line\"
@@ -388,7 +388,7 @@ Run =speedgoatmachineboot=
 2. Restart the target machine to load the new kernel
 3. Check the display information of the target machine
 
-**** Set the host PC
+*** 配置 host PC
 
 1. Connect the host and the target via a Ethernet cable. Make sure
    that the cable inserts to the correct \"Host Link\" port.
@@ -396,7 +396,7 @@ Run =speedgoatmachineboot=
    - IP address: 192.168.7.2
    - Subnet mask: 255.255.255.0
 
-**** Test host-target communication
+*** 测试 host-target 通讯连接
 
 1. =xpctargetping= success
 2. =xpctest= success
@@ -486,12 +486,10 @@ C++ 2010 Redistributable products, in order to restore the Visual C++
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+
 &lt;div id=\"outline-container-sec-1-2\" class=\"outline-3\"&gt;
-&lt;h3 id=\"sec-1-2\"&gt;安装 speedgoat driver&lt;/h3&gt;
+&lt;h3 id=\"sec-1-2\"&gt;配置 MATLAB &amp;amp; xPC&lt;/h3&gt;
 &lt;div class=\"outline-text-3\" id=\"text-1-2\"&gt;
-&lt;/div&gt;&lt;div id=\"outline-container-sec-1-2-1\" class=\"outline-4\"&gt;
-&lt;h4 id=\"sec-1-2-1\"&gt;Set MATLAB &amp;amp; xPC&lt;/h4&gt;
-&lt;div class=\"outline-text-4\" id=\"text-1-2-1\"&gt;
 &lt;ol class=\"org-ol\"&gt;
 &lt;li&gt;Run MATLAB as administrator
 &lt;/li&gt;
@@ -504,10 +502,12 @@ C++ 2010 Redistributable products, in order to restore the Visual C++
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=\"outline-container-sec-1-2-2\" class=\"outline-4\"&gt;
-&lt;h4 id=\"sec-1-2-2\"&gt;Install speedgoat driver&lt;/h4&gt;
-&lt;div class=\"outline-text-4\" id=\"text-1-2-2\"&gt;
+&lt;div id=\"outline-container-sec-1-3\" class=\"outline-3\"&gt;
+&lt;h3 id=\"sec-1-3\"&gt;安装 speedgoat driver&lt;/h3&gt;
+&lt;div class=\"outline-text-3\" id=\"text-1-3\"&gt;
 &lt;ol class=\"org-ol\"&gt;
+&lt;li&gt;Download the latest driver
+&lt;/li&gt;
 &lt;li&gt;Go to the driver folder
 &lt;/li&gt;
 &lt;li&gt;Run &lt;code&gt;speedgoat_setup&lt;/code&gt;
@@ -517,12 +517,12 @@ C++ 2010 Redistributable products, in order to restore the Visual C++
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=\"outline-container-sec-1-2-3\" class=\"outline-4\"&gt;
-&lt;h4 id=\"sec-1-2-3\"&gt;Set target machine&lt;/h4&gt;
-&lt;div class=\"outline-text-4\" id=\"text-1-2-3\"&gt;
-&lt;/div&gt;&lt;div id=\"outline-container-sec-1-2-3-1\" class=\"outline-5\"&gt;
-&lt;h5 id=\"sec-1-2-3-1\"&gt;Run &lt;code&gt;xpcexplr&lt;/code&gt; on 32-bit MATLAB to set target machine&lt;/h5&gt;
-&lt;div class=\"outline-text-5\" id=\"text-1-2-3-1\"&gt;
+&lt;div id=\"outline-container-sec-1-4\" class=\"outline-3\"&gt;
+&lt;h3 id=\"sec-1-4\"&gt;配置 target machine&lt;/h3&gt;
+&lt;div class=\"outline-text-3\" id=\"text-1-4\"&gt;
+&lt;/div&gt;&lt;div id=\"outline-container-sec-1-4-1\" class=\"outline-4\"&gt;
+&lt;h4 id=\"sec-1-4-1\"&gt;Run &lt;code&gt;xpcexplr&lt;/code&gt; on 32-bit MATLAB to set target machine&lt;/h4&gt;
+&lt;div class=\"outline-text-4\" id=\"text-1-4-1\"&gt;
 &lt;p&gt;
 Note: you will get error on 64-bit MATLAB
 &lt;/p&gt;
@@ -574,9 +574,9 @@ Note: you will get error on 64-bit MATLAB
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=\"outline-container-sec-1-2-3-2\" class=\"outline-5\"&gt;
-&lt;h5 id=\"sec-1-2-3-2\"&gt;Run the commander tools on 64-bit MATLAB to set target machine&lt;/h5&gt;
-&lt;div class=\"outline-text-5\" id=\"text-1-2-3-2\"&gt;
+&lt;div id=\"outline-container-sec-1-4-2\" class=\"outline-4\"&gt;
+&lt;h4 id=\"sec-1-4-2\"&gt;Run the commander tools on 64-bit MATLAB to set target machine&lt;/h4&gt;
+&lt;div class=\"outline-text-4\" id=\"text-1-4-2\"&gt;
 &lt;p&gt;
 参考： MATLAB hep system \"xPC Target\"&amp;#x2014;\"User's Guide\"&amp;#x2014;\"Configuring
 Environment From the MATLAB Command Line\"
@@ -597,18 +597,17 @@ Environment From the MATLAB Command Line\"
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=\"outline-container-sec-1-2-4\" class=\"outline-4\"&gt;
-&lt;h4 id=\"sec-1-2-4\"&gt;Make a boot disk on the host PC&lt;/h4&gt;
-&lt;div class=\"outline-text-4\" id=\"text-1-2-4\"&gt;
+&lt;div id=\"outline-container-sec-1-4-3\" class=\"outline-4\"&gt;
+&lt;h4 id=\"sec-1-4-3\"&gt;Make a boot disk on the host PC&lt;/h4&gt;
+&lt;div class=\"outline-text-4\" id=\"text-1-4-3\"&gt;
 &lt;p&gt;
 Run &lt;code&gt;speedgoatmachineboot&lt;/code&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=\"outline-container-sec-1-2-5\" class=\"outline-4\"&gt;
-&lt;h4 id=\"sec-1-2-5\"&gt;Transfer the kernel and make a boot disk&lt;/h4&gt;
-&lt;div class=\"outline-text-4\" id=\"text-1-2-5\"&gt;
+&lt;div id=\"outline-container-sec-1-4-4\" class=\"outline-4\"&gt;
+&lt;h4 id=\"sec-1-4-4\"&gt;Transfer the kernel and make a boot disk&lt;/h4&gt;
+&lt;div class=\"outline-text-4\" id=\"text-1-4-4\"&gt;
 &lt;ol class=\"org-ol\"&gt;
 &lt;li&gt;Insert the boot disk to an USB port of the target machine
 &lt;/li&gt;
@@ -619,9 +618,10 @@ Run &lt;code&gt;speedgoatmachineboot&lt;/code&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=\"outline-container-sec-1-2-6\" class=\"outline-4\"&gt;
-&lt;h4 id=\"sec-1-2-6\"&gt;Set the host PC&lt;/h4&gt;
-&lt;div class=\"outline-text-4\" id=\"text-1-2-6\"&gt;
+&lt;/div&gt;
+&lt;div id=\"outline-container-sec-1-5\" class=\"outline-3\"&gt;
+&lt;h3 id=\"sec-1-5\"&gt;配置 host PC&lt;/h3&gt;
+&lt;div class=\"outline-text-3\" id=\"text-1-5\"&gt;
 &lt;ol class=\"org-ol\"&gt;
 &lt;li&gt;Connect the host and the target via a Ethernet cable. Make sure
 that the cable inserts to the correct \"Host Link\" port.
@@ -637,9 +637,9 @@ that the cable inserts to the correct \"Host Link\" port.
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=\"outline-container-sec-1-2-7\" class=\"outline-4\"&gt;
-&lt;h4 id=\"sec-1-2-7\"&gt;Test host-target communication&lt;/h4&gt;
-&lt;div class=\"outline-text-4\" id=\"text-1-2-7\"&gt;
+&lt;div id=\"outline-container-sec-1-6\" class=\"outline-3\"&gt;
+&lt;h3 id=\"sec-1-6\"&gt;测试 host-target 通讯连接&lt;/h3&gt;
+&lt;div class=\"outline-text-3\" id=\"text-1-6\"&gt;
 &lt;ol class=\"org-ol\"&gt;
 &lt;li&gt;&lt;code&gt;xpctargetping&lt;/code&gt; success
 &lt;/li&gt;
@@ -648,7 +648,6 @@ that the cable inserts to the correct \"Host Link\" port.
 &lt;li&gt;Speedgoat full system test (run demos)
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -678,7 +677,7 @@ that the cable inserts to the correct \"Host Link\" port.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>0</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"标签集合"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 32508)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 33468)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2013</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>day</code></td><td class="value"><pre>5</pre></td></tr>
@@ -706,7 +705,7 @@ that the cable inserts to the correct \"Host Link\" port.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>1</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"网站调试"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 32508)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 33468)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2013</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>day</code></td><td class="value"><pre>5</pre></td></tr>
@@ -734,7 +733,7 @@ that the cable inserts to the correct \"Host Link\" port.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>2</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"博客日志"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 32508)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 33468)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2013</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>day</code></td><td class="value"><pre>5</pre></td></tr>
@@ -776,7 +775,7 @@ that the cable inserts to the correct \"Host Link\" port.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"主页：博士工作日志"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 32508)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 33468)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2013</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>day</code></td><td class="value"><pre>5</pre></td></tr>
@@ -918,7 +917,7 @@ that the cable inserts to the correct \"Host Link\" port.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>4</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"博主资料"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 32508)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 33468)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2013</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>day</code></td><td class="value"><pre>5</pre></td></tr>
@@ -956,7 +955,7 @@ that the cable inserts to the correct \"Host Link\" port.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>5</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"收藏夹"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 32508)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 33468)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2013</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>day</code></td><td class="value"><pre>5</pre></td></tr>
@@ -990,7 +989,7 @@ that the cable inserts to the correct \"Host Link\" port.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>6</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"笔记"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 32508)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 33468)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2013</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>day</code></td><td class="value"><pre>5</pre></td></tr>
@@ -1027,7 +1026,7 @@ that the cable inserts to the correct \"Host Link\" port.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>0</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"Copyright"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 32508)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 33468)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2013</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>day</code></td><td class="value"><pre>5</pre></td></tr>
@@ -1067,7 +1066,7 @@ Attribution-Noncommercial-Share Alike&lt;/a&gt; 中文许可发布.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>1</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"About"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 32508)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 33468)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2013</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>day</code></td><td class="value"><pre>5</pre></td></tr>
@@ -1105,7 +1104,7 @@ Attribution-Noncommercial-Share Alike&lt;/a&gt; 中文许可发布.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>2</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"Navigation"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 32508)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 33468)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2013</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>day</code></td><td class="value"><pre>5</pre></td></tr>
@@ -1201,7 +1200,7 @@ Attribution-Noncommercial-Share Alike&lt;/a&gt; 中文许可发布.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"Navigation Footer"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 32508)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(21072 33468)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2013</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>day</code></td><td class="value"><pre>5</pre></td></tr>
