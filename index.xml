@@ -5,9 +5,8 @@
   <link href="http://drxyang.github.io"/>
   <updated>Lisp error in nil: (wrong-type-argument integerp nil)</updated>
   <id>http://drxyang.github.ioindex.xml</id>
-  <entry><title type="html">开发环境搭建</title><author><name>Xin Yang</name></author><link href="http://drxyang.github.io/blog/2013/10/06_.html"/><updated>2013-10-06T20:20:00Z</updated><published>2013-10-06T20:20:00Z</published><id>blog/2013/10/06_.html</id><category scheme="/tags/xpc.html" term="xpc" label="xpc"/><category scheme="/tags/setup.html" term="setup" label="setup"/><category scheme="/tags/install.html" term="install" label="install"/><content type="html">&lt;p&gt;
-Cochlear 公司提供的模块只能在 MATLAB 2012a 及以下的版本运行。这带来不少的麻烦。
-需要完成配置
+  <entry><title type="html">开发环境搭建</title><author><name>Xin Yang</name></author><link href="http://drxyang.github.io/blog/2013/10/06_.html"/><updated>2013-10-06T20:51:00Z</updated><published>2013-10-06T20:51:00Z</published><id>blog/2013/10/06_.html</id><category scheme="/tags/xpc.html" term="xpc" label="xpc"/><category scheme="/tags/setup.html" term="setup" label="setup"/><category scheme="/tags/install.html" term="install" label="install"/><content type="html">&lt;p&gt;
+Cochlear 公司提供的模块只能在 MATLAB 2012a 及以下的版本运行。这带来不少的麻烦。需要完成配置
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
