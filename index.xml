@@ -5,7 +5,993 @@
   <link href="http://drxyang.github.io"/>
   <updated>Lisp error in nil: (wrong-type-argument integerp nil)</updated>
   <id>http://drxyang.github.ioindex.xml</id>
-  <entry><title type="html">开发环境搭建</title><author><name>Xin Yang</name></author><link href="http://drxyang.github.io/blog/2013/10/06_.html"/><updated>2013-10-06T20:51:00Z</updated><published>2013-10-06T20:51:00Z</published><id>blog/2013/10/06_.html</id><category scheme="/tags/xpc.html" term="xpc" label="xpc"/><category scheme="/tags/setup.html" term="setup" label="setup"/><category scheme="/tags/install.html" term="install" label="install"/><content type="html">&lt;p&gt;
+  <entry><title type="html">MATLAB 内置的文学编程工具 0---Options for presenting your code</title><author><name>Xin Yang</name></author><link href="http://drxyang.github.io/blog/2013/10/09_matlab-0-options-for-presenting-your-code.html"/><updated>2013-10-09T23:23:00Z</updated><published>2013-10-09T23:23:00Z</published><id>blog/2013/10/09_matlab-0-options-for-presenting-your-code.html</id><category scheme="/tags/matlab.html" term="matlab" label="matlab"/><content type="html">&lt;p&gt;
+参考：MATLAB help&amp;#x2014;MATLAB&amp;#x2014;User's Guide&amp;#x2014;Desktop Tools and
+Development Environment&amp;#x2014;Publishing MATLAB Code&amp;#x2014;Summary of Options
+for Presenting Your Code to Others
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;b&gt;Command line help&lt;/b&gt;: very good
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Publish&lt;/b&gt;: very good
+&lt;/li&gt;
+&lt;li&gt;Notebook: poor
+&lt;/li&gt;
+&lt;li&gt;Help browser topics: good for my project, but varies between
+different versions, not stable
+&lt;/li&gt;
+&lt;li&gt;Help browser demos: good for my project, but varies between
+different versions, not stable
+&lt;/li&gt;
+&lt;li&gt;MATLAB report generator: good, but not stable
+&lt;/li&gt;
+&lt;/ul&gt;
+</content></entry><entry><title type="html">MATLAB 内置的文学编程工具 3---MATLAB notebook</title><author><name>Xin Yang</name></author><link href="http://drxyang.github.io/blog/2013/10/09_matlab-3-matlab-notebook.html"/><updated>2013-10-09T23:15:00Z</updated><published>2013-10-09T23:15:00Z</published><id>blog/2013/10/09_matlab-3-matlab-notebook.html</id><category scheme="/tags/matlab.html" term="matlab" label="matlab"/><content type="html">
+
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;Introduction&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;Contents of Notebooks&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-1"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Microsoft Word documents
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;text
+&lt;/li&gt;
+&lt;li&gt;MATLAB commands
+&lt;/li&gt;
+&lt;li&gt;Output
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;An interactive MATLAB session
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;Creating or Opening a MATLAB Notebook&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-2"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;configuring Notebook (for Word 2010: &lt;code&gt;notebook -setup&lt;/code&gt;)
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;notebook&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;converting a word document to notbook
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-3" class="outline-3"&gt;
+&lt;h3 id="sec-1-3"&gt;Using Notebook&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-3"&gt;
+&lt;p&gt;
+&lt;b&gt;Note&lt;/b&gt;: 
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;A good way to learn the various techniques in
+  &lt;code&gt;matlabroot/notebook/pc/Readme.doc&lt;/code&gt;.
+&lt;/li&gt;
+&lt;li&gt;When you work on more than one MATLAB Notebook in a single word-processing session
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Each notebook uses the same "copy" of MATLAB.
+&lt;/li&gt;
+&lt;li&gt;All notebooks share the same workspace.
+&lt;/li&gt;
+&lt;li&gt;You can protect the integrity of your workspace by the &lt;code&gt;clear&lt;/code&gt;
+command as the first autoinit cell in the notebook.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If you change a cell, it can contain inconsistent data: 
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Input cells that depend on either the contents or the results of
+the changed cells do not automatically recalculate.
+&lt;/li&gt;
+&lt;li&gt;Consider selecting Evaluate MATLAB Notebook periodically
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Do not use debugging functions or the Editor while evaluating cells
+within a MATLAB Notebook
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Complete debugging files from within MATLAB.
+&lt;/li&gt;
+&lt;li&gt;Clear all the breakpoints.
+&lt;/li&gt;
+&lt;li&gt;Access the file using notebook.
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-1-3-1" class="outline-4"&gt;
+&lt;h4 id="sec-1-3-1"&gt;Input cells and Output cells&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-3-1"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Type the command into the MATLAB Notebook as text
+&lt;/li&gt;
+&lt;li&gt;Point in the command, then Notebook&amp;#x2014;Define Input Cell, or Alt-D
+&lt;/li&gt;
+&lt;li&gt;Alt-U to undefine cells
+&lt;/li&gt;
+&lt;li&gt;Notebook&amp;#x2014;Evaluate Cell, or Ctrl+Enter to get the output cell
+&lt;/li&gt;
+&lt;li&gt;Notebook&amp;#x2014;Purge Selected Output Cells, or press Alt+P to delete
+output cells.
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-3-2" class="outline-4"&gt;
+&lt;h4 id="sec-1-3-2"&gt;Cell group&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-3-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Use the mouse to select the input cells that are to make up the
+group
+&lt;/li&gt;
+&lt;li&gt;Notebook&amp;#x2014;Group Cells or press Alt-G.
+&lt;/li&gt;
+&lt;li&gt;Notebook&amp;#x2014;Evaluate Cell or press Ctrl+Enter to get output
+&lt;/li&gt;
+&lt;li&gt;Notebook &amp;gt; Evaluate MATLAB Notebook or press Alt+R.
+&lt;/li&gt;
+&lt;li&gt;Text or numeric output always comes first, regardless of the order
+of the commands in the group.
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+&lt;b&gt;Note&lt;/b&gt;:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;A cell group cannot contain output cells.
+&lt;/li&gt;
+&lt;li&gt;A cell group cannot contain text.
+&lt;/li&gt;
+&lt;li&gt;If you select part or all of an output cell, but not its input cell,
+the cell group still includes the input cell.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-1-3-3" class="outline-4"&gt;
+&lt;h4 id="sec-1-3-3"&gt;Autoinit input cells&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-3-3"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;It specify MATLAB commands be evaluated automatically each time a
+MATLAB Notebook opens. (quick and easy way to initialize the
+workspace)
+&lt;/li&gt;
+&lt;li&gt;It is an input cells with the following additional characteristics:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;The autoinit cells evaluate when MATLAB Notebook opens.
+&lt;/li&gt;
+&lt;li&gt;The commands in autoinit cells display in dark blue characters
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-3-4" class="outline-4"&gt;
+&lt;h4 id="sec-1-3-4"&gt;Calc zones&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-3-4"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;It partitions a MATLAB Notebook into self-contained sections
+&lt;/li&gt;
+&lt;li&gt;It prepares problem sets, making each problem a separate calc zone
+that can be created and tested on its own. 
+&lt;/li&gt;
+&lt;li&gt;A notebook can contain any number of calc zones.
+&lt;/li&gt;
+&lt;li&gt;Notebook&amp;#x2014;Evaluate Cell or press Ctrl+Enter to get output
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-4" class="outline-3"&gt;
+&lt;h3 id="sec-1-4"&gt;Printing and formatting a notebook&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-4"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Cell markers do not print.
+&lt;/li&gt;
+&lt;li&gt;Input cells, autoinit cells, and output cells (including error
+messages) print according to their defined styles.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content></entry><entry><title type="html">MATLAB 内置的文学编程工具 2---MATLAB markups</title><author><name>Xin Yang</name></author><link href="http://drxyang.github.io/blog/2013/10/08_matlab-2-matlab-markups.html"/><updated>2013-10-08T23:34:00Z</updated><published>2013-10-08T23:34:00Z</published><id>blog/2013/10/08_matlab-2-matlab-markups.html</id><category scheme="/tags/matlab.html" term="matlab" label="matlab"/><content type="html">&lt;p&gt;
+Reference: MATLAB help&amp;#x2014;MATLAB&amp;#x2014;User's Guide&amp;#x2014;Publishing MATLAB
+Code
+&lt;/p&gt;
+
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;Overview&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;Introduction&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-1"&gt;
+&lt;p&gt;
+Publish formats:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;HTML
+&lt;/li&gt;
+&lt;li&gt;XML
+&lt;/li&gt;
+&lt;li&gt;LaTeX
+&lt;/li&gt;
+&lt;li&gt;Microsoft Word
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Contents can be published:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Commentary on the code, 
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;bulleted and numbered lists, 
+&lt;/li&gt;
+&lt;li&gt;bold and monospace font, 
+&lt;/li&gt;
+&lt;li&gt;preformatted text, 
+&lt;/li&gt;
+&lt;li&gt;LaTeX equations
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MATLAB code
+&lt;/li&gt;
+&lt;li&gt;Results of running the code
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;output results
+&lt;/li&gt;
+&lt;li&gt;figures
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;Using code cells&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-2"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Any code cell features can be used for publishing
+&lt;/li&gt;
+&lt;li&gt;Only comments at the start of a cell will be published 
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-3" class="outline-3"&gt;
+&lt;h3 id="sec-1-3"&gt;Process for Publishing&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-3"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Open the file in MATLAB Editor
+&lt;/li&gt;
+&lt;li&gt;Cell&amp;#x2014;Insert Text Markup
+&lt;/li&gt;
+&lt;li&gt;Publish the file
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;File&amp;#x2014;Publish &lt;i&gt;file name&lt;/i&gt;: HTML published in &lt;code&gt;/html&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;File&amp;#x2014;Publish Configuration for &lt;i&gt;file name&lt;/i&gt;&amp;#x2014;Edit Publish
+Configurations for &lt;i&gt;file name&lt;/i&gt;, then publish
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-4" class="outline-3"&gt;
+&lt;h3 id="sec-1-4"&gt;Notes:&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-4"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;To display the commented text as explanatory text, rather than
+MATLAB code, insert a cell break before the explanation.
+&lt;/li&gt;
+&lt;li&gt;MATLAB publishes output generated by code immediately after the end
+of the cell that contains the code.
+&lt;/li&gt;
+&lt;li&gt;create a section header without including a cell break: &lt;code&gt;%%%&lt;/code&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Mark up MATLAB comments for publishing&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-2-1" class="outline-3"&gt;
+&lt;h3 id="sec-2-1"&gt;Overview&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-1"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Aims of marking up
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Polish the text file of code for publication
+&lt;/li&gt;
+&lt;li&gt;Single-source code with documentation
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ways of marking up
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Cell&amp;#x2014;Insert Text Markup (better for long commentary and
+descriptions)
+&lt;/li&gt;
+&lt;li&gt;Type the markup directly (better for short inline comments)
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-2" class="outline-3"&gt;
+&lt;h3 id="sec-2-2"&gt;Document title and introductory text&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-2"&gt;
+&lt;p&gt;
+At the beginning of the file
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+%% DOCUMENT TITLE
+% INTRODUCTORY TEXT
+&lt;/pre&gt;
+
+&lt;p&gt;
+Exported as &lt;code&gt;h1&lt;/code&gt; in HTML (large size, bold font)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-3" class="outline-3"&gt;
+&lt;h3 id="sec-2-3"&gt;Title for the new section&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-3"&gt;
+&lt;p&gt;
+At the beginning of the section
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+%% SECTION TITLE
+% DESCRIPTIVE TEXT
+&lt;/pre&gt;
+
+&lt;p&gt;
+Exported as &lt;code&gt;h2&lt;/code&gt; in HTML
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-4" class="outline-3"&gt;
+&lt;h3 id="sec-2-4"&gt;Preformatted Text&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-4"&gt;
+&lt;pre class="example"&gt;
+%%
+%
+%  PREFORMATTED
+%  TEXT
+%
+&lt;/pre&gt;
+
+&lt;p&gt;
+&lt;b&gt;NOTE&lt;/b&gt;: DON'T delete the two spaces after &lt;code&gt;%&lt;/code&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Exported as text
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Monospaced
+&lt;/li&gt;
+&lt;li&gt;Literal (maintains white space and does not wrap long lines)
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-5" class="outline-3"&gt;
+&lt;h3 id="sec-2-5"&gt;Syntax highlighted sample code&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-5"&gt;
+&lt;pre class="example"&gt;
+%%
+% 
+%   for i = 1:10
+%       disp x
+%   end
+% 
+&lt;/pre&gt;
+
+&lt;p&gt;
+&lt;b&gt;NOTE&lt;/b&gt;: DON'T delete the three spaces after &lt;code&gt;%&lt;/code&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-6" class="outline-3"&gt;
+&lt;h3 id="sec-2-6"&gt;Bulleted or numbered lists&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-6"&gt;
+&lt;pre class="example"&gt;
+% * ITEM1
+% * ITEM2
+% * ITEM3 is a very long
+% one. NO problem
+&lt;/pre&gt;
+
+&lt;p&gt;
+&lt;b&gt;NOTE&lt;/b&gt;: To create a multiline list item, break the line as desired,
+but do not insert the list item symbol (&lt;code&gt;*&lt;/code&gt; or &lt;code&gt;#&lt;/code&gt;) before the second
+line.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-7" class="outline-3"&gt;
+&lt;h3 id="sec-2-7"&gt;External Graphics&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-7"&gt;
+&lt;pre class="example"&gt;
+%% Image Example
+% This is a graphic:
+%
+% &amp;lt;&amp;lt;FILENAME.PNG&amp;gt;&amp;gt;
+%
+&lt;/pre&gt;
+
+&lt;p&gt;
+&lt;b&gt;NOTE&lt;/b&gt;: 
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;FILENAME.PNG is relative to the publish folder
+&lt;/li&gt;
+&lt;li&gt;Supported image types for output file formats
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="left"&gt;Output file format&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;types of images you can use&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;doc&lt;/td&gt;
+&lt;td class="left"&gt;any format that MS Office supports&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;ppt&lt;/td&gt;
+&lt;td class="left"&gt;any format that MS Office supports&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;html&lt;/td&gt;
+&lt;td class="left"&gt;any format publishes successfully&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;xml&lt;/td&gt;
+&lt;td class="left"&gt;any format publishes successfully&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;latex&lt;/td&gt;
+&lt;td class="left"&gt;any format publishes successfully&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;pdf&lt;/td&gt;
+&lt;td class="left"&gt;bmp and jpg&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-8" class="outline-3"&gt;
+&lt;h3 id="sec-2-8"&gt;HTML markup&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-8"&gt;
+&lt;pre class="example"&gt;
+% &amp;lt;html&amp;gt;
+% 
+% &amp;lt;/html&amp;gt;
+&lt;/pre&gt;
+
+&lt;p&gt;
+&lt;b&gt;NOTE&lt;/b&gt;: only for HTML export
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-9" class="outline-3"&gt;
+&lt;h3 id="sec-2-9"&gt;LaTeX markup&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-9"&gt;
+&lt;pre class="example"&gt;
+% &amp;lt;latex&amp;gt;
+% 
+% &amp;lt;/latex&amp;gt;
+&lt;/pre&gt;
+
+&lt;p&gt;
+&lt;b&gt;NOTE&lt;/b&gt;: only for LaTeX export
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-10" class="outline-3"&gt;
+&lt;h3 id="sec-2-10"&gt;Inline LaTeX math equations&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-10"&gt;
+&lt;pre class="example"&gt;
+% An inline equation: $x^2 + e^{\pi i}$
+&lt;/pre&gt;
+
+&lt;p&gt;
+&lt;b&gt;NOTE&lt;/b&gt;: supports all output types for LaTeX math equations, except
+Microsoft PowerPoint
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-11" class="outline-3"&gt;
+&lt;h3 id="sec-2-11"&gt;LaTeX display math&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-11"&gt;
+&lt;pre class="example"&gt;
+% $$x^2 + y^2 = 1$$
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-12" class="outline-3"&gt;
+&lt;h3 id="sec-2-12"&gt;Force a snapshot of output&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-12"&gt;
+&lt;pre class="example"&gt;
+%% Scale magic Data and Display as Image:
+
+for i=1:3
+    imagesc(magic(i))
+    snapnow;
+end
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-13" class="outline-3"&gt;
+&lt;h3 id="sec-2-13"&gt;Bold, italic, and monospaced text&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-13"&gt;
+&lt;pre class="example"&gt;
+% *BOLD TEXT*
+% _ITALIC TEXT_
+% |MONOSPACED TEXT|
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-14" class="outline-3"&gt;
+&lt;h3 id="sec-2-14"&gt;Trademark symbols&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-14"&gt;
+&lt;pre class="example"&gt;
+% trademark symbol (TM)
+% registered tradmark symbol (R)
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-15" class="outline-3"&gt;
+&lt;h3 id="sec-2-15"&gt;Hyperlinks&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-15"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-2-15-1" class="outline-4"&gt;
+&lt;h4 id="sec-2-15-1"&gt;Overview&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-15-1"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;HTML and XML export: dynamic or static hyperlinks
+&lt;/li&gt;
+&lt;li&gt;MS Word: static hyperlinks
+&lt;/li&gt;
+
+&lt;li&gt;dynamic hyperlinks
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;point the reader to MATLAB code or documentation
+&lt;/li&gt;
+&lt;li&gt;the link to run code
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;static hyperlinks
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;link to a web location (URL)
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+You can include (print version) or exclude (web version) the URL
+string from a static hyperlink.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-15-2" class="outline-4"&gt;
+&lt;h4 id="sec-2-15-2"&gt;Static hyperlinks and publishing URLs&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-15-2"&gt;
+&lt;pre class="example"&gt;
+% &amp;lt;http://www.mathworks.com&amp;gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-15-3" class="outline-4"&gt;
+&lt;h4 id="sec-2-15-3"&gt;Static hyperlinks without publishing URLs&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-15-3"&gt;
+&lt;pre class="example"&gt;
+% &amp;lt;http://www.mathworks.com MathWorks&amp;gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-15-4" class="outline-4"&gt;
+&lt;h4 id="sec-2-15-4"&gt;Dynamic hyperlinks&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-15-4"&gt;
+&lt;p&gt;
+&lt;b&gt;NOTE&lt;/b&gt;: need MATLAB running, not in Microsoft Word
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2-15-4-1" class="outline-5"&gt;
+&lt;h5 id="sec-2-15-4-1"&gt;Link to run code&lt;/h5&gt;
+&lt;div class="outline-text-5" id="text-2-15-4-1"&gt;
+&lt;pre class="example"&gt;
+%% Recycling Preference
+% Click the preference you want:
+%
+% &amp;lt;matlab:recycle('off') Disable recycling&amp;gt;
+% &amp;lt;matlab:recycle('on') Enable recycling&amp;gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-15-4-2" class="outline-5"&gt;
+&lt;h5 id="sec-2-15-4-2"&gt;Link to a file&lt;/h5&gt;
+&lt;div class="outline-text-5" id="text-2-15-4-2"&gt;
+&lt;pre class="example"&gt;
+%%
+% See the &amp;lt;matlab:web(fullfile(matlabroot,'toolbox','matlab','codetools','publish.m')) code&amp;gt; 
+% for the publish function.
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-15-4-3" class="outline-5"&gt;
+&lt;h5 id="sec-2-15-4-3"&gt;Link to a MATLAB function reference page&lt;/h5&gt;
+&lt;div class="outline-text-5" id="text-2-15-4-3"&gt;
+&lt;pre class="example"&gt;
+%%
+% See the help for the &amp;lt;matlab:doc('publish') publish&amp;gt; function.
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-15-4-4" class="outline-5"&gt;
+&lt;h5 id="sec-2-15-4-4"&gt;Effect of copying hyperlinked text from the MATLAB window&lt;/h5&gt;
+&lt;div class="outline-text-5" id="text-2-15-4-4"&gt;
+&lt;p&gt;
+Solution: cleaning up text markup before publishing
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;Mark up MATLAB code for publishing&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-3-1" class="outline-3"&gt;
+&lt;h3 id="sec-3-1"&gt;Overview&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-1"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Control the position of figure outputs
+&lt;/li&gt;
+&lt;li&gt;interweave comments, code, and output to draw readers' attention to
+certain parts
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3-2" class="outline-3"&gt;
+&lt;h3 id="sec-3-2"&gt;Specifying the display of code output&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-2"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;A cell break directs MATLAB to publish the code and output contained
+in that cells.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content></entry><entry><title type="html">MATLAB 配色和字体</title><author><name>Xin Yang</name></author><link href="http://drxyang.github.io/blog/2013/10/07_matlab.html"/><updated>2013-10-07T23:49:00Z</updated><published>2013-10-07T23:49:00Z</published><id>blog/2013/10/07_matlab.html</id><category scheme="/tags/matlab.html" term="matlab" label="matlab"/><content type="html">&lt;p&gt;
+用惯了深色背景的编辑器，于是想把 MATLAB 的配色也换的眼睛舒服点。
+&lt;/p&gt;
+
+&lt;p&gt;
+很容易 就找到了 &lt;a href="https://github.com/cfackler/zenburn_matlab"&gt;MATLAB 的 zenurn 配色&lt;/a&gt;。运行一次就行了。但是在 cell
+mode 下的高亮很刺眼。这个需要手动在
+File&amp;#x2014;Preferences&amp;#x2014;Colors&amp;#x2014;Programming Tools&amp;#x2014;Cell display options
+里改一下。
+&lt;/p&gt;
+
+&lt;p&gt;
+如果你不喜欢这个配色了 File&amp;#x2014;Preferences&amp;#x2014;Colors, Restore Default
+Colors 就行了。
+&lt;/p&gt;
+
+&lt;p&gt;
+相对于现在屏幕的大小，默认的字体大小偏小。看个帮助都费劲。
+File&amp;#x2014;Preferences&amp;#x2014;Fonts&amp;#x2014;Custom 选择自己喜欢的字体和大小就可以了。帮助字体在 HTML Proportional Text 里改。 
+&lt;/p&gt;
+</content></entry><entry><title type="html">MATLAB 内置的文学编程工具 1---MATLAB code cells</title><author><name>Xin Yang</name></author><link href="http://drxyang.github.io/blog/2013/10/07_matlab-1-matlab-code-cells.html"/><updated>2013-10-07T23:10:00Z</updated><published>2013-10-07T23:10:00Z</published><id>blog/2013/10/07_matlab-1-matlab-code-cells.html</id><category scheme="/tags/matlab.html" term="matlab" label="matlab"/><content type="html">&lt;p&gt;
+Reference: MATLAB User's Guide&amp;#x2014;Desktop Tools and Development
+Environment&amp;#x2014;Editing and Debugging MATLAB code&amp;#x2014;Evaluate Subsections
+of Files Using Code Cells
+&lt;/p&gt;
+
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;Introduction&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;Definition&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-1"&gt;
+&lt;p&gt;
+A code cell contains the contiguous lines of code that are evaluated
+as a whole.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;Usage&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-2"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Evaluating sections of code in the Editor
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;experiment with code
+&lt;/li&gt;
+&lt;li&gt;debug
+&lt;/li&gt;
+&lt;li&gt;fine-tune
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Publishing MATLAB files
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-3" class="outline-3"&gt;
+&lt;h3 id="sec-1-3"&gt;Notes&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-3"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;MATLAB code files (.m files) only.
+&lt;/li&gt;
+&lt;li&gt;MATLAB considers the entire file to be a single cell; therefore, the
+first line in a file does not have to begin with &lt;code&gt;%%&lt;/code&gt;.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Process for evaluating sections of files&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;MATLAB Editor: Cell&amp;#x2014;Enable Cell Mode
+&lt;/li&gt;
+&lt;li&gt;Define code budaries by &lt;code&gt;%%&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;Use cell features
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Quick navigation
+&lt;/li&gt;
+&lt;li&gt;Evaluate the code in a cell
+&lt;/li&gt;
+&lt;li&gt;View results of a cell
+&lt;/li&gt;
+&lt;li&gt;Experiments with different values in cells
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;Define code cells&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-3-1" class="outline-3"&gt;
+&lt;h3 id="sec-3-1"&gt;Implicit cell boundaries&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-1"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Top and bottom of the file
+&lt;/li&gt;
+&lt;li&gt;Function declaration and function end statement (If you define an
+explicit cell break in a function)
+&lt;/li&gt;
+&lt;li&gt;Lines containing the start and end of the language construct (If you
+define an explicit cell break within a language construct)
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3-2" class="outline-3"&gt;
+&lt;h3 id="sec-3-2"&gt;Define explicit cells&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-2"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Cell&amp;#x2014;Insert Cell Break
+&lt;/li&gt;
+&lt;li&gt;Click the Insert cell break button
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;%%&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;Select code lines and Cell&amp;#x2014;Insert Cell Breaks Around Selection
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3-3" class="outline-3"&gt;
+&lt;h3 id="sec-3-3"&gt;Cell titles&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-3"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Text on the &lt;code&gt;%%&lt;/code&gt; line called &lt;i&gt;cell title&lt;/i&gt;. (following a space)
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3-4" class="outline-3"&gt;
+&lt;h3 id="sec-3-4"&gt;Highlight code cells&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-4"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Current cell is highlighted by default
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-3-4-1" class="outline-4"&gt;
+&lt;h4 id="sec-3-4-1"&gt;Turn off highlighting&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-3-4-1"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;File&amp;#x2014;Preferences&amp;#x2014;Colors&amp;#x2014;Programming Tools
+&lt;/li&gt;
+&lt;li&gt;Under Cell display options, clear Highlight cells
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3-4-2" class="outline-4"&gt;
+&lt;h4 id="sec-3-4-2"&gt;Set a highlighting color&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-3-4-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;File&amp;#x2014;Preferences&amp;#x2014;Colors&amp;#x2014;Programming Tools
+&lt;/li&gt;
+&lt;li&gt;Under Cell display options, select Highlight cells
+&lt;/li&gt;
+&lt;li&gt;Select the color you like
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3-5" class="outline-3"&gt;
+&lt;h3 id="sec-3-5"&gt;Fix cell highlighting problems&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-5"&gt;
+&lt;p&gt;
+Syntax errors brings problems to cell highlighting
+&lt;/p&gt;
+
+&lt;p&gt;
+This feature is turned on by
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;File &amp;gt; Preferences &amp;gt; Code Analyzer
+&lt;/li&gt;
+&lt;li&gt;Select Enable integrated warning and error messages.
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3-6" class="outline-3"&gt;
+&lt;h3 id="sec-3-6"&gt;Remove/Merge code cells&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-6"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Delete one &lt;code&gt;%&lt;/code&gt; : the line changes to a standard comment
+&lt;/li&gt;
+&lt;li&gt;Delete the entire &lt;code&gt;%%&lt;/code&gt; line
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4" class="outline-2"&gt;
+&lt;h2 id="sec-4"&gt;Nested Cells&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-4"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-4-1" class="outline-3"&gt;
+&lt;h3 id="sec-4-1"&gt;Associate Code Cell Breaks with Subfunctions&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4-1"&gt;
+&lt;p&gt;
+Place the cell break within the subfunction, rather than above the
+subfunction declaration. (Because of the implicit cell breaks by
+MATLAB)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5" class="outline-2"&gt;
+&lt;h2 id="sec-5"&gt;Navigate among cells in a file&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-5"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Normally use Ctrl-&amp;lt;Down&amp;gt; and Ctrl-&amp;lt;Up&amp;gt;
+&lt;/li&gt;
+&lt;li&gt;Go&amp;#x2014;Go to or Ctrl-&amp;lt;g&amp;gt; is used for large files
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6" class="outline-2"&gt;
+&lt;h2 id="sec-6"&gt;Evaluate cells&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-6"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-6-1" class="outline-3"&gt;
+&lt;h3 id="sec-6-1"&gt;Evaluate code cells in a file&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-6-1"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Run the cell code even if the file contains unsaved changes (good
+for debugging) 
+&lt;/li&gt;
+&lt;li&gt;The file does not have to be on the search path. 
+&lt;/li&gt;
+&lt;li&gt;The results display in the Command Window, figure window, or
+elsewhere.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6-2" class="outline-3"&gt;
+&lt;h3 id="sec-6-2"&gt;Break points&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-6-2"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;breakpoints are ignored in cell evaluation. This means you cannot
+debug while running a single cell.
+&lt;/li&gt;
+&lt;li&gt;To use breakpoints, choose Run/Continue in the Debug menu. 
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6-3" class="outline-3"&gt;
+&lt;h3 id="sec-6-3"&gt;Function files&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-6-3"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;You can define and evaluate cells in MATLAB function files (add the
+necessary variables to the base workspace)
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6-4" class="outline-3"&gt;
+&lt;h3 id="sec-6-4"&gt;Modify values in a cell&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-6-4"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Using value modification tool in the cell toolbar to modify numbers
+in a cell can automatically re-evaluates the cell. (good for code
+experiment and fine-tunes)
+&lt;/li&gt;
+&lt;li&gt;You can also use (-, +, /, and *)
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content></entry><entry><title type="html">开发环境搭建</title><author><name>Xin Yang</name></author><link href="http://drxyang.github.io/blog/2013/10/06_.html"/><updated>2013-10-06T18:00:00Z</updated><published>2013-10-06T18:00:00Z</published><id>blog/2013/10/06_.html</id><category scheme="/tags/matlab.html" term="matlab" label="matlab"/><category scheme="/tags/xpc.html" term="xpc" label="xpc"/><category scheme="/tags/speedgoat.html" term="speedgoat" label="speedgoat"/><content type="html">&lt;p&gt;
 Cochlear 公司提供的模块只能在 MATLAB 2012a 及以下的版本运行。这带来不少的麻烦。需要完成配置
 &lt;/p&gt;
 

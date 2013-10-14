@@ -9,49 +9,49 @@
   
   <url>
     <loc>http://drxyang.github.io/tags.html</loc>
-    <lastmod>2013-10-06T20:51:00Z</lastmod>
+    <lastmod>2013-10-09T23:29:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
 <url>
     <loc>http://drxyang.github.io/debug.html</loc>
-    <lastmod>2013-10-06T20:51:00Z</lastmod>
+    <lastmod>2013-10-09T23:29:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
 <url>
     <loc>http://drxyang.github.io/changelog.html</loc>
-    <lastmod>2013-10-06T20:51:00Z</lastmod>
+    <lastmod>2013-10-09T23:29:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
 <url>
     <loc>http://drxyang.github.io/index.html</loc>
-    <lastmod>2013-10-06T20:51:00Z</lastmod>
+    <lastmod>2013-10-09T23:29:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
 <url>
     <loc>http://drxyang.github.io/static/drxyang.html</loc>
-    <lastmod>2013-10-06T20:51:00Z</lastmod>
+    <lastmod>2013-10-09T23:29:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
 <url>
     <loc>http://drxyang.github.io/static/favorite.html</loc>
-    <lastmod>2013-10-06T20:51:00Z</lastmod>
+    <lastmod>2013-10-09T23:29:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
 <url>
     <loc>http://drxyang.github.io/static/articles.html</loc>
-    <lastmod>2013-10-06T20:51:00Z</lastmod>
+    <lastmod>2013-10-09T23:29:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -59,8 +59,38 @@
 
 
   <url>
+    <loc>http://drxyang.github.io/blog/2013/10/09_matlab-0-options-for-presenting-your-code.html</loc>
+    <lastmod>2013-10-09T23:23:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://drxyang.github.io/blog/2013/10/09_matlab-3-matlab-notebook.html</loc>
+    <lastmod>2013-10-09T23:15:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://drxyang.github.io/blog/2013/10/08_matlab-2-matlab-markups.html</loc>
+    <lastmod>2013-10-08T23:34:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://drxyang.github.io/blog/2013/10/07_matlab.html</loc>
+    <lastmod>2013-10-07T23:49:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://drxyang.github.io/blog/2013/10/07_matlab-1-matlab-code-cells.html</loc>
+    <lastmod>2013-10-07T23:10:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
     <loc>http://drxyang.github.io/blog/2013/10/06_.html</loc>
-    <lastmod>2013-10-06T20:51:00Z</lastmod>
+    <lastmod>2013-10-06T18:00:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

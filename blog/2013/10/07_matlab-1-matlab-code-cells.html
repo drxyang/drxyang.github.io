@@ -2,7 +2,7 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8"/>
-    <title>开发环境搭建</title>
+    <title>MATLAB 内置的文学编程工具 1---MATLAB code cells</title>
     <link rel="stylesheet" type="text/less" href="../../../style/less/o-blog.less"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="generator" content="o-blog version 1.2"/>
@@ -84,7 +84,7 @@
       <div class="container">
 	<ul class="breadcrumb">
   <li><a href="../../../index.html">首页</a> <span class="divider">/</span></li>
-  <li><a href="../../../blog/index.html">Blog</a> <span class="divider">/</span></li><li><a href="../../../blog/2013/index.html">2013</a> <span class="divider">/</span></li><li><a href="../../../blog/2013/10/index.html">10</a> <span class="divider">/</span></li><li>开发环境搭建</li>
+  <li><a href="../../../blog/index.html">Blog</a> <span class="divider">/</span></li><li><a href="../../../blog/2013/index.html">2013</a> <span class="divider">/</span></li><li><a href="../../../blog/2013/10/index.html">10</a> <span class="divider">/</span></li><li>MATLAB 内置的文学编程工具 1---MATLAB code cells</li>
   </ul>
 
       </div>
@@ -97,23 +97,23 @@
     <div class="well">
       <div class="row">
 	<div class="date span1">
-	  <div class=" date-d">06</div>
+	  <div class=" date-d">07</div>
 	  <div class=" date-m"><a href="../../../blog/2013/10/index.html">Oct</a></div>
 	  <div class=" date-y"><a href="../../../blog/2013/index.html">2013</a>
 	  </div>
 	</div>
 	<div class="span1">
 	  <div class="qr-code">
-  <img src="http://chart.apis.google.com/chart?chs=50x50&cht=qr&chld=|0&chl=http%3A%2F%2Fdrxyang.github.io%2Fblog%2F2013%2F10%2F06_.html"
+  <img src="http://chart.apis.google.com/chart?chs=50x50&cht=qr&chld=|0&chl=http%3A%2F%2Fdrxyang.github.io%2Fblog%2F2013%2F10%2F07_matlab-1-matlab-code-cells.html"
        alt="qr-code" />
 </div>
 
 	</div>
-	<h1 class="offset2" style="font-size: 250%">开发环境搭建</h1>
+	<h1 class="offset2" style="font-size: 250%">MATLAB 内置的文学编程工具 1---MATLAB code cells</h1>
       </div>
       <nav>
 	<ul class="pager">
-	  <li class="previous">&nbsp;</li><li class="next" style="text-align: right;"><a href="../../../blog/2013/10/07_matlab-1-matlab-code-cells.html">MATLAB 内置的文学编程工具 1---MATLAB code cells&nbsp;<i class="icon-chevron-right"></i></a></li>
+	  <li class="previous"><a href="../../../blog/2013/10/06_.html"><i class="icon-chevron-left"></i>&nbsp;开发环境搭建</a></li><li class="next" style="text-align: right;"><a href="../../../blog/2013/10/07_matlab.html">MATLAB 配色和字体&nbsp;<i class="icon-chevron-right"></i></a></li>
 	</ul>
       </nav>
     </div>
@@ -121,267 +121,273 @@
   </header>
   <div class="article-content">
     <p>
-Cochlear 公司提供的模块只能在 MATLAB 2012a 及以下的版本运行。这带来不少的麻烦。需要完成配置
+Reference: MATLAB User's Guide&#x2014;Desktop Tools and Development
+Environment&#x2014;Editing and Debugging MATLAB code&#x2014;Evaluate Subsections
+of Files Using Code Cells
 </p>
-
-<ul class="org-ul">
-<li>软件环境：
-<ol class="org-ol">
-<li>Windows 7 64-bit
-</li>
-<li>MATLAB 2012a 64-bit <sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>
-</li>
-<li>Windows SDK 7.1, or Visual Studio 10.0 Professional with SP1
-</li>
-<li>Speedgoat driver 7
-</li>
-</ol>
-</li>
-<li>硬件环境：
-<ol class="org-ol">
-<li>Desktop PC
-</li>
-<li>Speedgoat target machine
-<ul class="org-ul">
-<li>1615 (new)
-</li>
-<li>1273 (old)
-</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">出现的问题</h2>
+<h2 id="sec-1">Introduction</h2>
 <div class="outline-text-2" id="text-1">
 </div><div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1">安装 Windows SDK 7.1 失败</h3>
+<h3 id="sec-1-1">Definition</h3>
 <div class="outline-text-3" id="text-1-1">
-<blockquote>
 <p>
-Installation of the "Microsoft Windows SDKfor Windows 7" product has
-reported the following error: Please refer to
-Samples\Setup\HTML\ConfigDetails.htm document for further information.
-</p>
-</blockquote>
-
-
-<p>
-参考 <a href="http://support.microsoft.com/kb/2717426">Microsoft Support</a>
-</p>
-
-<p>
-To resolve this issue, you must uninstall all versions of the Visual
-C++ 2010 Redistributable before installing the Windows 7 SDK. You may
-have one or more of the following products installed:
-</p>
-
-<ul class="org-ul">
-<li>Microsoft Visual C++ 2010 x86 Redistributable
-</li>
-<li>Microsoft Visual C++ 2010 x64 Redistributable
-</li>
-</ul>
-
-<p>
-After uninstalling the Microsoft Visual C++ 2010 Redistributable
-products, you may install the Windows 7 SDK. After installing the
-Windows 7 SDK, you may then reinstall the newer version of the Visual
-C++ 2010 Redistributable products, in order to restore the Visual C++
-2010 Redistributable products to their original state.
+A code cell contains the contiguous lines of code that are evaluated
+as a whole.
 </p>
 </div>
 </div>
 <div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2">配置 MATLAB &amp; xPC</h3>
+<h3 id="sec-1-2">Usage</h3>
 <div class="outline-text-3" id="text-1-2">
-<ol class="org-ol">
-<li>Run MATLAB as administrator
+<ul class="org-ul">
+<li>Evaluating sections of code in the Editor
+<ul class="org-ul">
+<li>experiment with code
 </li>
-<li>Set mex compiler by <code>mex -setup</code>
+<li>debug
 </li>
-<li>Set xpc compiler by <code>xpcsetCC -setup</code>
+<li>fine-tune
 </li>
-<li>Set target kernel by <code>rtwintgt -setup</code>
+</ul>
 </li>
-</ol>
+<li>Publishing MATLAB files
+</li>
+</ul>
 </div>
 </div>
 <div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3">安装 speedgoat driver</h3>
+<h3 id="sec-1-3">Notes</h3>
 <div class="outline-text-3" id="text-1-3">
-<ol class="org-ol">
-<li>Download the latest driver
-</li>
-<li>Go to the driver folder
-</li>
-<li>Run <code>speedgoat_setup</code>
-</li>
-<li>Restart MATLAB
-</li>
-</ol>
-</div>
-</div>
-<div id="outline-container-sec-1-4" class="outline-3">
-<h3 id="sec-1-4">配置 target machine</h3>
-<div class="outline-text-3" id="text-1-4">
-</div><div id="outline-container-sec-1-4-1" class="outline-4">
-<h4 id="sec-1-4-1">Run <code>xpcexplr</code> on 32-bit MATLAB to set target machine</h4>
-<div class="outline-text-4" id="text-1-4-1">
-<p>
-Note: you will get error on 64-bit MATLAB
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="left" />
-
-<col  class="right" />
-</colgroup>
-<tbody>
-<tr>
-<td class="left">IP address</td>
-<td class="right">192.168.7.1</td>
-</tr>
-
-<tr>
-<td class="left">TCP/IP target port</td>
-<td class="right">22222</td>
-</tr>
-
-<tr>
-<td class="left">LAN subnet  mask    address:</td>
-<td class="right">255.255.255.0</td>
-</tr>
-
-<tr>
-<td class="left">TCP/IP gateway address</td>
-<td class="right">255.255.255.255</td>
-</tr>
-
-<tr>
-<td class="left">TCP/IP target driver</td>
-<td class="right">I8254x</td>
-</tr>
-
-<tr>
-<td class="left">Multicore CPU support</td>
-<td class="right">enable</td>
-</tr>
-
-<tr>
-<td class="left">Graphic mode</td>
-<td class="right">enable</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div id="outline-container-sec-1-4-2" class="outline-4">
-<h4 id="sec-1-4-2">Run the commander tools on 64-bit MATLAB to set target machine</h4>
-<div class="outline-text-4" id="text-1-4-2">
-<p>
-参考： MATLAB hep system "xPC Target"&#x2014;"User's Guide"&#x2014;"Configuring
-Environment From the MATLAB Command Line"
-</p>
-
-<div class="org-src-container">
-
-<pre class="src src-matlab"><span class="linenr"> 1: </span>tgs=xpctarget.targets;
-<span class="linenr"> 2: </span>tgs.makeDefault(<span style="color: #cc9393;">'TargetPC1'</span>);
-<span class="linenr"> 3: </span>env=tgs.Item(<span style="color: #cc9393;">'TargetPC1'</span>);
-<span class="linenr"> 4: </span>env.HostTargetComm=<span style="color: #cc9393;">'TcpIp'</span>;
-<span class="linenr"> 5: </span>env.TcpIpTargetAddress=<span style="color: #cc9393;">'192.168.7.1'</span>;
-<span class="linenr"> 6: </span>env.TcpIpTargetPort=<span style="color: #cc9393;">'22222'</span>;
-<span class="linenr"> 7: </span>env.TcpIpSubNetMask=<span style="color: #cc9393;">'255.255.255.0'</span>;
-<span class="linenr"> 8: </span>env.TcpIpGateway=<span style="color: #cc9393;">'255.255.255.255'</span>;
-<span class="linenr"> 9: </span>env.TcpIpTargetDriver=<span style="color: #cc9393;">'I8254x'</span>;
-<span class="linenr">10: </span>env.SecondaryIDE=<span style="color: #cc9393;">'on'</span>;
-<span class="linenr">11: </span>env.MulticoreSupport=<span style="color: #cc9393;">'on'</span>;
-</pre>
-</div>
-</div>
-</div>
-<div id="outline-container-sec-1-4-3" class="outline-4">
-<h4 id="sec-1-4-3">Make a boot disk on the host PC</h4>
-<div class="outline-text-4" id="text-1-4-3">
-<p>
-Run <code>speedgoatmachineboot</code>
-</p>
-</div>
-</div>
-<div id="outline-container-sec-1-4-4" class="outline-4">
-<h4 id="sec-1-4-4">Transfer the kernel and make a boot disk</h4>
-<div class="outline-text-4" id="text-1-4-4">
-<ol class="org-ol">
-<li>Insert the boot disk to an USB port of the target machine
-</li>
-<li>Restart the target machine to load the new kernel
-</li>
-<li>Check the display information of the target machine
-</li>
-<li>For the new target machine (1615), you have to disconnect the USB
-keyboard when it boots up, otherwise it will fail (strange). You
-can reconnect the keyboard after it boots up.
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div id="outline-container-sec-1-5" class="outline-3">
-<h3 id="sec-1-5">配置 host PC</h3>
-<div class="outline-text-3" id="text-1-5">
-<ol class="org-ol">
-<li>Connect the host and the target via a Ethernet cable. Make sure
-that the cable inserts to the correct "Host Link" port.
-</li>
-<li>Set IP address (TCP/IPV4) of the host
 <ul class="org-ul">
-<li>IP address: 192.168.7.2
+<li>MATLAB code files (.m files) only.
 </li>
-<li>Subnet mask: 255.255.255.0
+<li>MATLAB considers the entire file to be a single cell; therefore, the
+first line in a file does not have to begin with <code>%%</code>.
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Process for evaluating sections of files</h2>
+<div class="outline-text-2" id="text-2">
+<ol class="org-ol">
+<li>MATLAB Editor: Cell&#x2014;Enable Cell Mode
+</li>
+<li>Define code budaries by <code>%%</code>
+</li>
+<li>Use cell features
+<ul class="org-ul">
+<li>Quick navigation
+</li>
+<li>Evaluate the code in a cell
+</li>
+<li>View results of a cell
+</li>
+<li>Experiments with different values in cells
 </li>
 </ul>
 </li>
 </ol>
 </div>
 </div>
-<div id="outline-container-sec-1-6" class="outline-3">
-<h3 id="sec-1-6">测试 host-target 通讯连接</h3>
-<div class="outline-text-3" id="text-1-6">
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Define code cells</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">Implicit cell boundaries</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>Top and bottom of the file
+</li>
+<li>Function declaration and function end statement (If you define an
+explicit cell break in a function)
+</li>
+<li>Lines containing the start and end of the language construct (If you
+define an explicit cell break within a language construct)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">Define explicit cells</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>Cell&#x2014;Insert Cell Break
+</li>
+<li>Click the Insert cell break button
+</li>
+<li><code>%%</code>
+</li>
+<li>Select code lines and Cell&#x2014;Insert Cell Breaks Around Selection
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3">Cell titles</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>Text on the <code>%%</code> line called <i>cell title</i>. (following a space)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4">Highlight code cells</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>Current cell is highlighted by default
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-3-4-1" class="outline-4">
+<h4 id="sec-3-4-1">Turn off highlighting</h4>
+<div class="outline-text-4" id="text-3-4-1">
 <ol class="org-ol">
-<li><code>xpctargetping</code> success
+<li>File&#x2014;Preferences&#x2014;Colors&#x2014;Programming Tools
 </li>
-<li><code>xpctest</code> success
+<li>Under Cell display options, clear Highlight cells
 </li>
-<li>Speedgoat full system test (run demos)
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-3-4-2" class="outline-4">
+<h4 id="sec-3-4-2">Set a highlighting color</h4>
+<div class="outline-text-4" id="text-3-4-2">
+<ol class="org-ol">
+<li>File&#x2014;Preferences&#x2014;Colors&#x2014;Programming Tools
+</li>
+<li>Under Cell display options, select Highlight cells
+</li>
+<li>Select the color you like
 </li>
 </ol>
 </div>
 </div>
 </div>
-<div id="footnotes">
-<h2 class="footnotes">Footnotes: </h2>
-<div id="text-footnotes">
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5">Fix cell highlighting problems</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+Syntax errors brings problems to cell highlighting
+</p>
 
-<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p>这里必须说一下，如果 64-bit 的 Windows7
-     安装了 32-bit 的 MATLAB，将无法 使用 xPC 连接 target machine。</p></div>
+<p>
+This feature is turned on by
+</p>
 
-
+<ol class="org-ol">
+<li>File &gt; Preferences &gt; Code Analyzer
+</li>
+<li>Select Enable integrated warning and error messages.
+</li>
+</ol>
 </div>
 </div>
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6">Remove/Merge code cells</h3>
+<div class="outline-text-3" id="text-3-6">
+<ol class="org-ol">
+<li>Delete one <code>%</code> : the line changes to a standard comment
+</li>
+<li>Delete the entire <code>%%</code> line
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Nested Cells</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">Associate Code Cell Breaks with Subfunctions</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Place the cell break within the subfunction, rather than above the
+subfunction declaration. (Because of the implicit cell breaks by
+MATLAB)
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Navigate among cells in a file</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>Normally use Ctrl-&lt;Down&gt; and Ctrl-&lt;Up&gt;
+</li>
+<li>Go&#x2014;Go to or Ctrl-&lt;g&gt; is used for large files
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Evaluate cells</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1">Evaluate code cells in a file</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>Run the cell code even if the file contains unsaved changes (good
+for debugging) 
+</li>
+<li>The file does not have to be on the search path. 
+</li>
+<li>The results display in the Command Window, figure window, or
+elsewhere.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-2" class="outline-3">
+<h3 id="sec-6-2">Break points</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>breakpoints are ignored in cell evaluation. This means you cannot
+debug while running a single cell.
+</li>
+<li>To use breakpoints, choose Run/Continue in the Debug menu. 
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-3" class="outline-3">
+<h3 id="sec-6-3">Function files</h3>
+<div class="outline-text-3" id="text-6-3">
+<ul class="org-ul">
+<li>You can define and evaluate cells in MATLAB function files (add the
+necessary variables to the base workspace)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-4" class="outline-3">
+<h3 id="sec-6-4">Modify values in a cell</h3>
+<div class="outline-text-3" id="text-6-4">
+<ul class="org-ul">
+<li>Using value modification tool in the cell toolbar to modify numbers
+in a cell can automatically re-evaluates the cell. (good for code
+experiment and fine-tunes)
+</li>
+<li>You can also use (-, +, /, and *)
+</li>
+</ul>
+</div>
+</div>
+</div>
+
   </div>
   
   <footer class="well article-footer">
-    发布于 <time datetime="2013-10-06T18:00:00Z"> 2013-10-06 18:00:00</time>.
+    发布于 <time datetime="2013-10-07T23:10:00Z"> 2013-10-07 23:10:00</time>.
     <nav class="tag-cloud">
       <h1><i class="icon-tags"></i> 相关标签</h1>
       <ul>
-	<li class="label label-inverse small"><a href="../../../tags/matlab.html">matlab</a></li><li class="label label-inverse small"><a href="../../../tags/xpc.html">xpc</a></li><li class="label label-inverse small"><a href="../../../tags/speedgoat.html">speedgoat</a></li>
+	<li class="label label-inverse small"><a href="../../../tags/matlab.html">matlab</a></li>
       </ul>
     </nav>
   </footer>

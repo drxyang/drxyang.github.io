@@ -2,7 +2,7 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8"/>
-    <title>PhD-Journal</title>
+    <title>MATLAB 配色和字体</title>
     <link rel="stylesheet" type="text/less" href="../../../style/less/o-blog.less"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="generator" content="o-blog version 1.2"/>
@@ -84,23 +84,90 @@
       <div class="container">
 	<ul class="breadcrumb">
   <li><a href="../../../index.html">首页</a> <span class="divider">/</span></li>
-  <li><a href="../../../archives.html">Archives</a> <span class="divider">/</span></li><li><a href="../../index.html">Blog</a> <span class="divider">/</span></li><li><a href="../index.html">2013</a> <span class="divider">/</span></li><li>10</li>
+  <li><a href="../../../blog/index.html">Blog</a> <span class="divider">/</span></li><li><a href="../../../blog/2013/index.html">2013</a> <span class="divider">/</span></li><li><a href="../../../blog/2013/10/index.html">10</a> <span class="divider">/</span></li><li>MATLAB 配色和字体</li>
   </ul>
 
       </div>
     </div>
     <div id="page" class="container">
 
-<article>
-  <div class="article-content">
-    <nav class="archives">
-      <ul class="month 2013 10">
-  <li>09 <a href="../../../blog/2013/10/09_matlab-0-options-for-presenting-your-code.html">MATLAB 内置的文学编程工具 0---Options for presenting your code</a></li><li>09 <a href="../../../blog/2013/10/09_matlab-3-matlab-notebook.html">MATLAB 内置的文学编程工具 3---MATLAB notebook</a></li><li>08 <a href="../../../blog/2013/10/08_matlab-2-matlab-markups.html">MATLAB 内置的文学编程工具 2---MATLAB markups</a></li><li>07 <a href="../../../blog/2013/10/07_matlab.html">MATLAB 配色和字体</a></li><li>07 <a href="../../../blog/2013/10/07_matlab-1-matlab-code-cells.html">MATLAB 内置的文学编程工具 1---MATLAB code cells</a></li><li>06 <a href="../../../blog/2013/10/06_.html">开发环境搭建</a></li>
-</ul>
+  <div class="article">
+  <header class="article-header">
 
-    </nav>
+    <div class="well">
+      <div class="row">
+	<div class="date span1">
+	  <div class=" date-d">07</div>
+	  <div class=" date-m"><a href="../../../blog/2013/10/index.html">Oct</a></div>
+	  <div class=" date-y"><a href="../../../blog/2013/index.html">2013</a>
+	  </div>
+	</div>
+	<div class="span1">
+	  <div class="qr-code">
+  <img src="http://chart.apis.google.com/chart?chs=50x50&cht=qr&chld=|0&chl=http%3A%2F%2Fdrxyang.github.io%2Fblog%2F2013%2F10%2F07_matlab.html"
+       alt="qr-code" />
+</div>
+
+	</div>
+	<h1 class="offset2" style="font-size: 250%">MATLAB 配色和字体</h1>
+      </div>
+      <nav>
+	<ul class="pager">
+	  <li class="previous"><a href="../../../blog/2013/10/07_matlab-1-matlab-code-cells.html"><i class="icon-chevron-left"></i>&nbsp;MATLAB 内置的文学编程工具 1---MATLAB code cells</a></li><li class="next" style="text-align: right;"><a href="../../../blog/2013/10/08_matlab-2-matlab-markups.html">MATLAB 内置的文学编程工具 2---MATLAB markups&nbsp;<i class="icon-chevron-right"></i></a></li>
+	</ul>
+      </nav>
+    </div>
+
+  </header>
+  <div class="article-content">
+    <p>
+用惯了深色背景的编辑器，于是想把 MATLAB 的配色也换的眼睛舒服点。
+</p>
+
+<p>
+很容易 就找到了 <a href="https://github.com/cfackler/zenburn_matlab">MATLAB 的 zenurn 配色</a>。运行一次就行了。但是在 cell
+mode 下的高亮很刺眼。这个需要手动在
+File&#x2014;Preferences&#x2014;Colors&#x2014;Programming Tools&#x2014;Cell display options
+里改一下。
+</p>
+
+<p>
+如果你不喜欢这个配色了 File&#x2014;Preferences&#x2014;Colors, Restore Default
+Colors 就行了。
+</p>
+
+<p>
+相对于现在屏幕的大小，默认的字体大小偏小。看个帮助都费劲。
+File&#x2014;Preferences&#x2014;Fonts&#x2014;Custom 选择自己喜欢的字体和大小就可以了。帮助字体在 HTML Proportional Text 里改。 
+</p>
+
   </div>
-</article>
+  
+  <footer class="well article-footer">
+    发布于 <time datetime="2013-10-07T23:49:00Z"> 2013-10-07 23:49:00</time>.
+    <nav class="tag-cloud">
+      <h1><i class="icon-tags"></i> 相关标签</h1>
+      <ul>
+	<li class="label label-inverse small"><a href="../../../tags/matlab.html">matlab</a></li>
+      </ul>
+    </nav>
+  </footer>
+  </div>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'etimecowboy-phd'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
       </div>
       <div id="footer">
 	<div class="container">
