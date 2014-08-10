@@ -9,49 +9,49 @@
   
   <url>
     <loc>http://drxyang.github.io/tags.html</loc>
-    <lastmod>2013-11-20T23:25:00Z</lastmod>
+    <lastmod>2014-08-10T21:00:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
 <url>
     <loc>http://drxyang.github.io/debug.html</loc>
-    <lastmod>2013-11-20T23:25:00Z</lastmod>
+    <lastmod>2014-08-10T21:00:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
 <url>
     <loc>http://drxyang.github.io/changelog.html</loc>
-    <lastmod>2013-11-20T23:25:00Z</lastmod>
+    <lastmod>2014-08-10T21:00:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
 <url>
     <loc>http://drxyang.github.io/index.html</loc>
-    <lastmod>2013-11-20T23:25:00Z</lastmod>
+    <lastmod>2014-08-10T21:00:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
 <url>
     <loc>http://drxyang.github.io/static/drxyang.html</loc>
-    <lastmod>2013-11-20T23:25:00Z</lastmod>
+    <lastmod>2014-08-10T21:00:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
 <url>
     <loc>http://drxyang.github.io/static/favorite.html</loc>
-    <lastmod>2013-11-20T23:25:00Z</lastmod>
+    <lastmod>2014-08-10T21:00:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
 <url>
     <loc>http://drxyang.github.io/static/articles.html</loc>
-    <lastmod>2013-11-20T23:25:00Z</lastmod>
+    <lastmod>2014-08-10T21:00:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -59,32 +59,80 @@
 
 
   <url>
-    <loc>http://drxyang.github.io/blog/2013/10/09_matlab-0-options-for-presenting-your-code.html</loc>
-    <lastmod>2013-10-09T23:23:00Z</lastmod>
+    <loc>http://drxyang.github.io/blog/2014/08/09_organize-my-files.html</loc>
+    <lastmod>2014-08-09T22:02:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 <url>
-    <loc>http://drxyang.github.io/blog/2013/10/09_matlab-3-matlab-notebook.html</loc>
-    <lastmod>2013-10-09T23:15:00Z</lastmod>
+    <loc>http://drxyang.github.io/blog/2014/06/17_what-is-the-relation-between-fft-length-and-frequency-resolution.html</loc>
+    <lastmod>2014-06-17T11:20:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 <url>
-    <loc>http://drxyang.github.io/blog/2013/10/08_matlab-2-matlab-markups.html</loc>
-    <lastmod>2013-10-08T23:34:00Z</lastmod>
+    <loc>http://drxyang.github.io/blog/2014/05/05_wikipedian-definitions-of-some-scientific-terms-in-hearing-research.html</loc>
+    <lastmod>2014-05-05T16:54:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 <url>
-    <loc>http://drxyang.github.io/blog/2013/10/07_matlab.html</loc>
-    <lastmod>2013-10-07T23:49:00Z</lastmod>
+    <loc>http://drxyang.github.io/blog/2014/03/20_software-i-used-for-research.html</loc>
+    <lastmod>2014-03-20T23:45:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 <url>
-    <loc>http://drxyang.github.io/blog/2013/10/07_matlab-1-matlab-code-cells.html</loc>
-    <lastmod>2013-10-07T23:10:00Z</lastmod>
+    <loc>http://drxyang.github.io/blog/2014/03/17_speech-and-noise.html</loc>
+    <lastmod>2014-03-17T20:35:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://drxyang.github.io/blog/2014/02/19_mathematics-terms-review.html</loc>
+    <lastmod>2014-02-19T22:27:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://drxyang.github.io/blog/2014/01/21_.html</loc>
+    <lastmod>2014-01-21T05:11:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://drxyang.github.io/blog/2014/01/20_.html</loc>
+    <lastmod>2014-01-20T05:12:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://drxyang.github.io/blog/2014/01/19_5.html</loc>
+    <lastmod>2014-01-19T21:19:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://drxyang.github.io/blog/2014/01/15_tips-for-reading-academic-and-technical-literatures.html</loc>
+    <lastmod>2014-01-15T15:10:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://drxyang.github.io/blog/2013/12/19_the-study-skills-handbookby-s-cottrell.html</loc>
+    <lastmod>2013-12-19T00:25:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://drxyang.github.io/blog/2013/12/03_.html</loc>
+    <lastmod>2013-12-03T21:54:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://drxyang.github.io/blog/2013/12/01_.html</loc>
+    <lastmod>2013-12-01T23:06:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

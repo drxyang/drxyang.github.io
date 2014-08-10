@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-	  <a class="brand" href="../../../index.html">Journal</a>
+	  <a class="brand" href="../../../index.html">Work Journal</a>
 	  <div class="nav-collapse collapse">
 	    <ul class="org-ul">
 <li><a href="../../../attic/etimecowboy.html"><i>icon-user icon-white</i> 博主其人</a>
@@ -36,15 +36,15 @@
 
 <li><a href="#"><i>icon-file icon-white</i> 最新博文</a>
 <ul class="org-ul">
-<li><a href="../../../blog/2013/10/09_matlab-0-options-for-presenting-your-code.html">MATLAB 内置的文学编程工具 0---Options for presenting your code</a>
+<li><a href="../../../blog/2014/08/09_organize-my-files.html">Organize my files</a>
 </li>
-<li><a href="../../../blog/2013/10/09_matlab-3-matlab-notebook.html">MATLAB 内置的文学编程工具 3---MATLAB notebook</a>
+<li><a href="../../../blog/2014/06/17_what-is-the-relation-between-fft-length-and-frequency-resolution.html">【转】What is the relation between FFT length and frequency resolution?</a>
 </li>
-<li><a href="../../../blog/2013/10/08_matlab-2-matlab-markups.html">MATLAB 内置的文学编程工具 2---MATLAB markups</a>
+<li><a href="../../../blog/2014/05/05_wikipedian-definitions-of-some-scientific-terms-in-hearing-research.html">Wikipedian definitions of some scientific terms in hearing research</a>
 </li>
-<li><a href="../../../blog/2013/10/07_matlab.html">MATLAB 配色和字体</a>
+<li><a href="../../../blog/2014/03/20_software-i-used-for-research.html">Software I used for research</a>
 </li>
-<li><a href="../../../blog/2013/10/07_matlab-1-matlab-code-cells.html">MATLAB 内置的文学编程工具 1---MATLAB code cells</a>
+<li><a href="../../../blog/2014/03/17_speech-and-noise.html">Speech and noise</a>
 </li>
 </ul>
 </li>
@@ -93,7 +93,7 @@
       <div class="row">
 	<div class="date span1">
 	  <div class=" date-d">06</div>
-	  <div class=" date-m"><a href="../../../blog/2013/10/index.html">十月</a></div>
+	  <div class=" date-m"><a href="../../../blog/2013/10/index.html">Oct</a></div>
 	  <div class=" date-y"><a href="../../../blog/2013/index.html">2013</a>
 	  </div>
 	</div>
@@ -108,7 +108,7 @@
       </div>
       <nav>
 	<ul class="pager">
-	  <li class="previous">&nbsp;</li><li class="next" style="text-align: right;"><a href="../../../blog/2013/10/07_matlab-1-matlab-code-cells.html">MATLAB 内置的文学编程工具 1---MATLAB code cells&nbsp;<i class="icon-chevron-right"></i></a></li>
+	  <li class="previous">&nbsp;</li><li class="next" style="text-align: right;"><a href="../../../blog/2013/12/01_.html">今天特别想牛牛&nbsp;<i class="icon-chevron-right"></i></a></li>
 	</ul>
       </nav>
     </div>
@@ -189,6 +189,7 @@ C++ 2010 Redistributable products, in order to restore the Visual C++
 </p>
 </div>
 </div>
+
 <div id="outline-container-sec-1-2" class="outline-3">
 <h3 id="sec-1-2">配置 MATLAB &amp; xPC</h3>
 <div class="outline-text-3" id="text-1-2">
@@ -204,6 +205,7 @@ C++ 2010 Redistributable products, in order to restore the Visual C++
 </ol>
 </div>
 </div>
+
 <div id="outline-container-sec-1-3" class="outline-3">
 <h3 id="sec-1-3">安装 speedgoat driver</h3>
 <div class="outline-text-3" id="text-1-3">
@@ -219,6 +221,7 @@ C++ 2010 Redistributable products, in order to restore the Visual C++
 </ol>
 </div>
 </div>
+
 <div id="outline-container-sec-1-4" class="outline-3">
 <h3 id="sec-1-4">配置 target machine</h3>
 <div class="outline-text-3" id="text-1-4">
@@ -276,6 +279,7 @@ Note: you will get error on 64-bit MATLAB
 </table>
 </div>
 </div>
+
 <div id="outline-container-sec-1-4-2" class="outline-4">
 <h4 id="sec-1-4-2">Run the commander tools on 64-bit MATLAB to set target machine</h4>
 <div class="outline-text-4" id="text-1-4-2">
@@ -301,14 +305,16 @@ Environment From the MATLAB Command Line"
 </div>
 </div>
 </div>
+
 <div id="outline-container-sec-1-4-3" class="outline-4">
 <h4 id="sec-1-4-3">Make a boot disk on the host PC</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <p>
-Run <code>speedgoatmachineboot</code>
+Run <code>speedgoatmachineboot('X:')</code>
 </p>
 </div>
 </div>
+
 <div id="outline-container-sec-1-4-4" class="outline-4">
 <h4 id="sec-1-4-4">Transfer the kernel and make a boot disk</h4>
 <div class="outline-text-4" id="text-1-4-4">
@@ -327,6 +333,7 @@ can reconnect the keyboard after it boots up.
 </div>
 </div>
 </div>
+
 <div id="outline-container-sec-1-5" class="outline-3">
 <h3 id="sec-1-5">配置 host PC</h3>
 <div class="outline-text-3" id="text-1-5">
@@ -345,6 +352,7 @@ that the cable inserts to the correct "Host Link" port.
 </ol>
 </div>
 </div>
+
 <div id="outline-container-sec-1-6" class="outline-3">
 <h3 id="sec-1-6">测试 host-target 通讯连接</h3>
 <div class="outline-text-3" id="text-1-6">
@@ -357,6 +365,42 @@ that the cable inserts to the correct "Host Link" port.
 </li>
 </ol>
 </div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">新的问题：SN1615无法启动 <span class="timestamp-wrapper"><span class="timestamp">&lt;2014-03-05 Wed&gt;</span></span></h2>
+<div class="outline-text-2" id="text-2">
+<p>
+两台机器中新的一台SN1615（另一台是SN1273）无法启动，先以为是BIOS的设置问题，就发了封信去Speedgoat公司问。他们发了个BIOS设置截图过来，设置后还是不行。
+</p>
+
+<p>
+突然发现把键盘拔掉就成功启动了，启动后插上键盘也能用。真奇怪。不过问题总算搞定了。
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Upgrade MATLAB to R2014a <span class="timestamp-wrapper"><span class="timestamp">&lt;2014-03-10 Mon&gt;</span></span></h2>
+<div class="outline-text-2" id="text-3">
+<p>
+MATLAB makes a lot of improvement in xPC development in this release
+(Today!). We will use this version as the main development tool.
+</p>
+
+<p>
+Changes I found as far.
+</p>
+
+<ul class="org-ul">
+<li>xPC changed to Real-Time Windows Target+Simulink Real-Time
+</li>
+<li>xPC target machine kernel changed
+</li>
+<li>Microsoft Visual Studio 2012 provides better support than 2010
+</li>
+</ul>
 </div>
 </div>
 <div id="footnotes">
@@ -420,7 +464,7 @@ that the cable inserts to the correct "Host Link" port.
 <li><a href="../../../archives.html"><i>icon-list icon-white</i> 博文归档</a>
 </li>
 
-<li><a href="../../../notes/index.html"><i>icon-book icon-white</i> 独立笔记</a>
+<li><a href="../../../notes/index.html"><i>icon-book icon-white</i> 独立文章</a>
 </li>
 
 <li><a href="../../../index.xml"><i>icon-rss icon-white</i> RSS</a>
@@ -432,13 +476,13 @@ that the cable inserts to the correct "Host Link" port.
 	    <nav id="archives" class="span3">
 	      <h1><a href="../../../archives.html">归档</a></h1>
 	      <ul>
-		<li><a href="../../../blog/2013/10/09_matlab-0-options-for-presenting-your-code.html">MATLAB 内置的文学编程工具 0---Options for presenting your code</a></li> <li><a href="../../../blog/2013/10/09_matlab-3-matlab-notebook.html">MATLAB 内置的文学编程工具 3---MATLAB notebook</a></li> <li><a href="../../../blog/2013/10/08_matlab-2-matlab-markups.html">MATLAB 内置的文学编程工具 2---MATLAB markups</a></li> <li><a href="../../../blog/2013/10/07_matlab.html">MATLAB 配色和字体</a></li> <li><a href="../../../blog/2013/10/07_matlab-1-matlab-code-cells.html">MATLAB 内置的文学编程工具 1---MATLAB code cells</a></li> <li><a href="../../../blog/2013/10/06_.html">开发环境搭建</a></li> 
+		<li><a href="../../../blog/2014/08/09_organize-my-files.html">Organize my files</a></li> <li><a href="../../../blog/2014/06/17_what-is-the-relation-between-fft-length-and-frequency-resolution.html">【转】What is the relation between FFT length and frequency resolution?</a></li> <li><a href="../../../blog/2014/05/05_wikipedian-definitions-of-some-scientific-terms-in-hearing-research.html">Wikipedian definitions of some scientific terms in hearing research</a></li> <li><a href="../../../blog/2014/03/20_software-i-used-for-research.html">Software I used for research</a></li> <li><a href="../../../blog/2014/03/17_speech-and-noise.html">Speech and noise</a></li> <li><a href="../../../blog/2014/02/19_mathematics-terms-review.html">Mathematics Terms Review</a></li> <li><a href="../../../blog/2014/01/21_.html">科大讯飞信息科技有限公司</a></li> <li><a href="../../../blog/2014/01/20_.html">中国助听器市场新闻几则</a></li> <li><a href="../../../blog/2014/01/19_5.html">读博5个月的体会</a></li> <li><a href="../../../blog/2014/01/15_tips-for-reading-academic-and-technical-literatures.html">Tips for Reading Academic and Technical Literatures</a></li> 
 	      </ul>
 	    </nav>
 	    <nav class="tags span3">
 	      <h1><a href="../../../tags/index.html">标签</a></h1>
 	      <ul>
-  <li style="font-size: 220.00%;"><a href="../../../tags/matlab.html">matlab</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/speedgoat.html">speedgoat</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/xpc.html">xpc</a></li> 
+  <li style="font-size: 80.00%;"><a href="../../../tags/aim.html">AIM</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/auditory.html">auditory</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/book.html">book</a></li> <li style="font-size: 220.00%;"><a href="../../../tags/china.html">china</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/dsp.html">dsp</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/family.html">family</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/hearing-aid.html">hearing aid</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/idea.html">idea</a></li> <li style="font-size: 220.00%;"><a href="../../../tags/industry.html">industry</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/matlab.html">matlab</a></li> <li style="font-size: 220.00%;"><a href="../../../tags/news.html">news</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/org.html">org</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/read.html">read</a></li> <li style="font-size: 220.00%;"><a href="../../../tags/review.html">review</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/software.html">software</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/speech.html">speech</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/speedgoat.html">speedgoat</a></li> <li style="font-size: 220.00%;"><a href="../../../tags/summary.html">summary</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/tips.html">tips</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/xpc.html">xpc</a></li> <li style="font-size: 80.00%;"><a href="../../../tags/zz.html">zz</a></li> 
 </ul>
 
 	    </nav>
